@@ -25,9 +25,9 @@ class Gait_Manager(Node):
         # just for testing
         self.state_dict = {}
         init = JointState()
-        init.position = [1 for _ in range(3)]
-        init.velocity = [0 for _ in range(3)]
-        init.effort = [0 for _ in range(3)]
+        init.position = [1.0 for _ in range(3)]
+        init.velocity = [0.0 for _ in range(3)]
+        init.effort = [0.0 for _ in range(3)]
         self.state_dict[self.worm_id] = init
 
         WORKSPACE_NAME = "WORMS-software-ws"
