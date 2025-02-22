@@ -24,7 +24,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'gait_manager = gait_manager.gait_manager:main'
+            'gait_manager = gait_manager.gait_manager:main',
+            'local_controller = gait_manager.local_controller:main'
         ],
     },
 )
